@@ -1,0 +1,467 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Hedvig+Letters+Serif:opsz@12..24&family=Monoton&family=Montserrat:wght@500;800&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     overflow-y: hidden;   
+    overflow-x: hidden;
+  
+}
+header{
+    width: 100%;
+    height: 108%;
+    /* border:  1px solid #fff; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    box-shadow: 0px 10px 25px -8px #000;
+     overflow-y: hidden; 
+
+    
+}
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 110%;
+     border-radius: 20px;
+    background: black;
+    opacity: .9;
+    z-index: -1;
+   
+
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    
+    border-radius: 20px;
+    background: linear-gradient(180deg,tranparent, #000);
+    /* opacity: .6; */
+     z-index: -1; 
+     
+}
+header .video {
+    position: absolute;
+    width: 120%;
+    height: 808px;
+    padding-left: 0%;
+    align-items: center;
+    z-index: -1;
+    top: -8%;
+    bottom: -80%;
+    left: -10%;
+    right: -20%
+   
+
+
+ 
+}
+ header .second{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    z-index: -1;
+
+  
+
+} 
+ header nav{
+    
+    
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      padding: 80px 500px;  
+   
+ 
+}
+header nav .logo{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 250px;
+    width: 500px;
+   
+    justify-content: center;
+}
+header nav .logo h1{
+    width: 30px;
+
+
+}
+header nav .logo ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    list-style: none;
+
+}
+header nav .logo ul li{
+    padding: 3px 15px;
+    padding-right: 20px;
+
+}
+header nav .logo ul li a{
+    text-decoration: none;
+     color:rgb(255, 255, 255, .7); 
+    /* color:  #4c5262; */
+    opacity: .8;
+    font-size: 25px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+header nav .logo ul li a:hover{
+    color:white;
+
+}
+
+header nav  .search_user{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    
+}
+
+header nav  .search_user input{
+     padding: 3px ; 
+     padding-left: 100px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255, .7);
+    color: #fff;
+    /* display: flex;
+    align-items: end; */
+    border: none;
+    outline: none;
+    
+} 
+header nav  .search_user input::placeholder{
+    color: black;
+    
+}
+header nav  .search_user img{
+     width: 100px;
+    height: 46px; 
+    padding-left: 50px;
+    /* padding-right: 5px; */
+    /* padding-top: 5px;
+     padding-bottom: 5px;
+      border-radius: 50%;    */
+}
+ header nav  .search_user .search{
+    position: absolute;
+    width: 320px;
+    height: 270px;
+    /* border: 1px solid #fff; */
+    right: 0;
+    top: 60px;
+     z-index: 99999; 
+     overflow-y: auto;
+     /* overflow-x: hidden; */
+    
+}  
+header nav  .search_user .search::-webkit-scrollbar{
+    width: 5px; 
+    background:  rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    visibility: hidden;
+}
+header nav  .search_user .search::-webkit-scrollbar-thumb{
+    width: 5px; 
+    background:  rgba(255, 255, 255, .4);
+    border-radius: 5px;
+    visibility: hidden;
+}
+header nav  .search_user .search:hover::-webkit-scrollbar{
+    
+    visibility: visible;
+}
+header nav  .search_user .search:hover:-webkit-scrollbar-thumb{
+   
+    visibility: visible;
+}
+header nav  .search_user .card {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+    display: none;
+
+
+}
+header nav .search_user .card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    background: rgba(241, 234, 234, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    z-index: -1;
+
+}
+header nav .search_user .card img{
+    width: 38px;
+    height: 90%;
+    border-radius: 2px;
+    margin-left: 8px;
+
+}
+header nav .search_user .card .cont{
+    margin-left: 10px;
+    color: #fff;
+}
+header nav .search_user .card .cont h3{
+    font-size: 15px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+    
+
+}
+header nav .search_user .card .cont p{
+    font-size: 10px;
+    color: rgb(255, 255, .8);
+}
+header .content{
+    position: relative;
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 50px;
+
+}
+header .content h1{
+    font-size: 50px;
+     opacity: .7; 
+
+}
+header .content p{
+  font-size: 15px;
+  width: 350px;
+  opacity: .5;
+  word-break: break-all;
+
+}
+header .content .details{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+header .content .details h6{
+    color: rgba(255, 255, 255, .8);
+
+    font-size: 10px;
+    margin-right: 10px;
+}
+header .content .details h5{
+    /* color: rgb(245, 53, 117,.8); */
+    color: palevioletred;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+header .content .details h4{
+    color:white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+header .content .details h3{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+header .content .details .star{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+header .content .details h3 span{
+    background-color: yellow;
+    color: #000;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 5px;
+    font-weight: 500;
+
+
+}
+header .content .pop{
+
+    margin-top: 55px;
+    margin-left: 10px;
+    color:rgb(255, 255, 255, .7);
+}
+/* header .content .btns{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+header .content .btns a{
+    margin-top: 20px;
+   font-size: 20px;
+   font-weight: 600;
+background: linear-gradient(90deg,#00bdff,#0079ff);
+border-radius: 5px;
+color:#000;
+text-decoration: none;
+margin-left: 10px;
+animation: button 1s linear infinite;
+}
+header .content .btns a .play{
+    width: 20px;
+    height: 20px;
+}
+header .content .btns a .dwonload{
+    width: 30px;
+    height: 20px;
+    
+}
+@keyframes button{
+
+    0%{
+        background: linear-gradient(0deg,#00bdff,#0079ff);
+
+    }
+    12%{
+        background: linear-gradient(45deg,#00bdff,#0079ff);
+    }
+    24%{
+        background: linear-gradient(95deg,#00bdff,#0079ff);  
+    }
+    36%{
+        background: linear-gradient(145deg,#00bdff,#0079ff);  
+    }
+    48%{
+        background: linear-gradient(195deg,#00bdff,#0079ff);   
+    }
+    60%{
+        background: linear-gradient(245deg,#00bdff,#0079ff); 
+    }
+    72%{
+        background: linear-gradient(300deg,#00bdff,#0079ff);  
+    }
+    100%{
+        background: linear-gradient(360deg,#00bdff,#0079ff);  
+    }
+    
+} */
+header section{
+    position: absolute;
+    width: 96%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: #fff;
+}
+header section .cards{
+    position: absolute;
+    width: 97%;
+    height: 280px;
+    /* border:1px solid #fff; */
+    margin-top: -230px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+   
+}
+header section .cards::-webkit-scrollbar{
+display: none;
+   
+}
+
+header section .cards .card1{
+    position:relative;
+    min-width: 170px;
+    min-height: 230px;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color:black .1 ;
+    transition: .3s linear;
+    
+   
+}
+header section .cards .card1 .poster{
+   width: 160px;
+   height: 160px;
+   border-radius: 50%; 
+  position: absolute;
+    
+   
+}
+/* header section .cards .card1 {
+    width: 300px;
+}
+header section .cards .card1 .rest_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 999999;
+} */
+ /* header section .cards .card1 .audio{
+    width: 168px;
+    position: absolute;
+    height: 30px;
+
+    margin-top: 200px;
+
+}  */
+header section .cards .card1 h3{
+    width: 168px;
+    position: absolute;
+    height: 30px;
+
+    margin-top: 185px;
+    line-height: 10px;
+   color:white;
+    padding-left: 28px;
+    opacity: .6;
+
+} 
+header section .cards .card1 p{
+    width: 168px;
+    position: absolute;
+    height: 30px;
+    padding-left: 35px;
+    color: #424651;
+    font-weight: 700;
+
+    margin-top: 200px;
+
+} 
+
+
+
+
+
+
+
